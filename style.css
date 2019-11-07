@@ -7,7 +7,7 @@ html,body
     overflow-x: hidden;
     font-family: baskerville;
   	font-size: 16px; 
-  	background-color: #ddd;
+  	background-color: #424949;
 
 }
 
@@ -93,9 +93,15 @@ hr{
   	font-size:25px;
 }
 
+.about-txt{
+	color:#F8ED46;
+	margin:50px;
+	
+}
+
 .site-links{
 	text-decoration: none;
-	color:#212529;
+	color:#F8ED46;
 }
 
 .site-links:hover{
@@ -140,6 +146,11 @@ hr{
 	.abt-heading{
 		text-align:center;
 		padding-top:4px;
+	}
+	.about-txt{
+	
+	margin:30px;
+	
 	}
 
 	.para{
