@@ -71,6 +71,17 @@ html,body
   	color: #D38947;
 }
 
+.abt-heading{
+	color:#F8ED46;
+}
+
+.bullets{
+	color:#D38947;
+}
+.para{
+	color:#D38947;
+}
+
 
 
 .section-heading{
@@ -155,9 +166,11 @@ hr{
 
 	.para{
 		text-align: justify;
+		margin:20px;
 	}
 
 	.bullets{
 		text-align:justify;
+		margin-right:20px;
 	}
 }
