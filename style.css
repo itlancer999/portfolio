@@ -145,6 +145,50 @@ hr{
 	color:#F8ED46;
 }
 
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	margin-left:30px;
+	width:90%;
+	background:#eee;
+	height:15px;
+	border-radius:17px;
+	-moz-border-radius:17px;
+	-webkit-border-radius:17px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+
+}
+
+.skillbar-title{
+	color:#F8ED46;
+	margin-left:30px;
+}
+.skillbar-bar {
+	height:15px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:17px;
+	-moz-border-radius:17px;
+	-webkit-border-radius:17px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:15px;
+	line-height:15px;
+	color:#212529;
+	
+}
+
+
 @media screen and (max-width: 768px) {
 
 	.section-detail{
@@ -157,7 +201,12 @@ hr{
 		font-size: 18px;
 	}
 
-
+	.skillbar {
+	margin-left:15px;
+	}
+	.skillbar-title{
+	margin-left:15px;
+	}
 	.footer-copyright{
 	font-size: 12px;
 	}
