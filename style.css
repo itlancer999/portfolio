@@ -188,6 +188,10 @@ hr{
 	
 }
 
+.side{
+	background:#212121;
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -206,6 +210,10 @@ hr{
 	}
 	.skillbar-title{
 	margin-left:15px;
+	}
+	
+	.side{
+	background:none;
 	}
 	.footer-copyright{
 	font-size: 12px;
