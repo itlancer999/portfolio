@@ -5,8 +5,8 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    font-family: baskerville;
-  	font-size: 16px; 
+    font-family: Roboto;
+  	
   	background-color: #424949;
 
 }
@@ -199,6 +199,13 @@ hr{
 .site-links{
 	text-decoration: none;
 	color:#F8ED46;
+}
+
+.thumbs{
+	 
+
+	border:1px solid #212529;
+	box-shadow: 0 3px 2px #212529;
 }
 
 .site-links:hover{
