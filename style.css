@@ -1,16 +1,16 @@
+/* HTML BODY */
 html,body
 {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
     font-family: Roboto;
-  	
-  	background-color: #424949;
+  	background-color: #282828;
 
 }
 
+/* PRE-LOADER */
 #preloader {
     position: fixed;
     top: 0;
@@ -85,6 +85,8 @@ html,body
     }
 }
 
+
+/* NAVBAR */
 .navbar-dark .navbar-brand{
 	color:#F8ED46;
 }
@@ -105,26 +107,35 @@ html,body
 }
 
 
-.dropdown-item{
+.dropdown-item .dropdown-divider{
 	color:#F8ED46;
+	background:#212529; 
 }
 
 .dropdown-item:hover{
 	color:#D38947;
 }
 
+.dropdown-item .sub-menu{
+	text-decoration: none;
+}
+
+
+/*
 .sec-ser {
-	
 	font-size:120px;
 	color:#F8ED46;
 	padding-top:30px;
 }
 
+
 .detail{
 	padding-top:20px;
-	padding-bottom:30px;
+	padding-bottom:50px;
 }
+*/
 
+/*MAIN*/
 .masthead {
  	height: 100vh;
 	min-height: 500px;
@@ -133,47 +144,81 @@ html,body
   	background-position: center;
   	background-repeat: no-repeat;
 }
-
+/*MAIN*/
 .font {
 	color:#F8ED46;
-  	transition: color 0.3s linear;
-   
-  
+  	transition: color 0.3s linear;  
 }
 
 .font:hover {
   	color: #D38947;
 }
 
-.abt-heading{
-	color:#F8ED46;
+/*SCROLLDOWN ANIMATION*/
+#scrolldown{
+	position: relative;
+	bottom:15%;
+	left:50%;
+	width:30px;
+	height:30px;
+	transform:translateY(-80px) translateX(-50%) rotate(45deg);
+
 }
 
-.bullets{
-	color:#D38947;
-}
-.para{
-	color:#D38947;
+#scrolldown span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height:100%;
+	border-bottom:2px solid #fff;
+	border-right:2px solid #fff;
+	animation: animate 1.5s linear infinite;
+	opacity: 0;
+
 }
 
 
+#scrolldown span:nth-child(1){
+	transform: translate(-15px,-15px);
+	animation-delay:-0.4s;
+}
+
+#scrolldown span:nth-child(2){
+	transform: translate(0,0);
+	animation-delay:-0.2s;
+}
+
+#scrolldown span:nth-child(3){
+	transform: translate(15px,15px);
+	animation-delay:0s;
+}
+
+@keyframes animate{
+	0%{
+		top:-5px;
+		left:-5px;
+		opacity:0;
+	}
+
+	25%{
+		top:0;
+		left:0;
+		opacity:1;
+	}
+
+	50%,100%{
+		top:5px;
+		left:5px;
+		opacity:0;
+	}
+}
 
 .section-heading{
   	color: #F8ED46;
   	font-weight: bold;
 
-}
-
-.form-label{
-	color:#F8ED46;
-}
-
-.btn-sub{
-	color:#F8ED46;
-	background-color: #424940;
-	border-color:#fff;
-	border-radius: 5px;
-	padding:5px;
 }
 
 hr{
@@ -186,32 +231,71 @@ hr{
 	color:#D38947;
 }
 
-.section-detail{
-  	font-size:25px;
-}
-
 .about-txt{
+	font-size:22px;
+  	text-align: justify;
+ 
 	color:#F8ED46;
 	margin:50px;
-	
+	opacity: 80%;
+}
+
+.abt-heading{
+	color:#F8ED46;
 }
 
 .site-links{
 	text-decoration: none;
-	color:#F8ED46;
+	color: #F8ED46;
 }
 
 .thumbs{
-	 
+	border:.5px solid #000000;
+	box-shadow: 0 3px 2px #000000;
+	width: 300px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;	
+}
 
-	border:1px solid #212529;
-	box-shadow: 0 3px 2px #212529;
+.thumbs:hover {
+	width: 350px;
 }
 
 .site-links:hover{
 	color:#D38947;
 	text-decoration: none;
 }
+
+.view{
+	color:#F8ED46;
+
+}
+.view:hover{
+	color:#D38947;
+	text-decoration: none;
+
+}
+
+.view-logo{
+	background-color:#3f3f3f;
+	border:.5px solid #000000;
+	border-radius: 50%;
+	box-shadow: 0 3px 2px #000000; 
+}
+
+#scrollup-load{
+	margin:10px;
+}
+
+#scrollup-load .up{
+font-size: 30px;
+padding-right:20px;
+}
+#scrollup-load .up:hover {
+			animation: animate 1s infinite;
+		
+		}
 
 .page-footer{
 	background-color: #212529;
@@ -226,6 +310,53 @@ hr{
 	color:#F8ED46;
 }
 
+.side{
+	background:#212121;
+}
+
+
+/*CONTACT PAGE*/
+
+.form-label{
+	color:#F8ED46;
+}
+
+.btn-sub{
+	color:#F8ED46;
+	background-color: #424940;
+	border:1px solid #000000;
+	border-radius: 5px;
+	padding:5px;
+}
+
+.btn-sub:hover{
+	color:#D38947;
+}
+
+.para{
+	color:#D38947;
+}
+
+/*SERVICES*/
+
+#fixed {
+	background:url('img/sun-burst.png') no-repeat center center fixed;
+	display:table;
+	height:20%;
+	background-position:relative;
+	width:100%;
+	background-size:cover;
+
+}
+
+.thumbs-psd{
+	border:.5px solid #000000;
+	box-shadow: 0 3px 2px #000000;
+}
+
+
+
+/*ABOUT*/
 .skillbar {
 	position:relative;
 	display:block;
@@ -249,6 +380,7 @@ hr{
 	color:#F8ED46;
 	margin-left:30px;
 }
+
 .skillbar-bar {
 	height:15px;
 	width:0px;
@@ -269,14 +401,10 @@ hr{
 	
 }
 
-.side{
-	background:#212121;
-}
-
 
 @media screen and (max-width: 768px) {
 
-	.section-detail{
+	/*.section-detail{
 		font-size: 18px;
 		text-align: justify;
 		margin:5px;
@@ -284,18 +412,20 @@ hr{
 
 	.detail{
 		font-size: 18px;
-	}
+	}*/
 
 	.skillbar {
 	margin-left:15px;
 	}
+
 	.skillbar-title{
 	margin-left:15px;
 	}
-	
+
 	.side{
-	background:none;
+		background:none;
 	}
+
 	.footer-copyright{
 	font-size: 12px;
 	}
@@ -313,14 +443,13 @@ hr{
 	margin:30px;
 	
 	}
-
 	.para{
 		text-align: justify;
 		margin:20px;
 	}
 
-	.bullets{
-		text-align:justify;
-		margin-right:20px;
+	#tech{
+		font-size: 30px;
 	}
+
 }
