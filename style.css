@@ -361,7 +361,7 @@ padding-right:20px;
 	position:relative;
 	display:block;
 	margin-bottom:15px;
-	margin-left:30px;
+	/*margin-left:30px;*/
 	width:90%;
 	background:#eee;
 	height:15px;
@@ -378,7 +378,7 @@ padding-right:20px;
 
 .skillbar-title{
 	color:#F8ED46;
-	margin-left:30px;
+	/*margin-left:30px;*/
 }
 
 .skillbar-bar {
@@ -413,15 +413,14 @@ padding-right:20px;
 	.detail{
 		font-size: 18px;
 	}*/
-	.about-txt{
-		font-size:18px;
-	.skillbar {
+	
+	/*.skillbar {
 	margin-left:15px;
 	}
 
 	.skillbar-title{
 	margin-left:15px;
-	}
+	}*/
 
 	.side{
 		background:none;
@@ -434,13 +433,17 @@ padding-right:20px;
 	.footer-note{
 	font-size: 12px;
 	}
+	
+	skill-control{
+		padding-left:35px;
+	}
 
 	.abt-heading{
 		text-align:center;
 		padding-top:4px;
 	}
 	.about-txt{
-	
+	font-size:20px;
 	margin:30px;
 	
 	}
