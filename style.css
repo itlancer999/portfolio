@@ -3,8 +3,8 @@ html,body
 {
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: Roboto;
   	background-color: #282828;
 
@@ -31,7 +31,7 @@ html,body
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #424949;
-    -webkit-animation: spin 2s linear infinite;
+   
     animation: spin 2s linear infinite;
 }
 #loader:before {
@@ -57,30 +57,17 @@ html,body
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #D38947;
-    -webkit-animation: spin 1.5s linear infinite;
+   
     animation: spin 1.5s linear infinite;
 }
-@-webkit-keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
+
 @keyframes spin {
     0%   {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
+        
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
+       
         transform: rotate(360deg);
     }
 }
@@ -102,8 +89,11 @@ html,body
 }
 
 
-.navbar-dark .navbar-nav .active>.nav-link{
+
+
+.navbar-dark .navbar-nav .nav-link.active{
 	color:#D38947;
+
 }
 
 
@@ -121,20 +111,6 @@ html,body
 }
 
 
-/*
-.sec-ser {
-	font-size:120px;
-	color:#F8ED46;
-	padding-top:30px;
-}
-
-
-.detail{
-	padding-top:20px;
-	padding-bottom:50px;
-}
-*/
-
 /*MAIN*/
 .masthead {
  	height: 100vh;
@@ -144,10 +120,12 @@ html,body
   	background-position: center;
   	background-repeat: no-repeat;
 }
+
 /*MAIN*/
 .font {
 	color:#F8ED46;
-  	transition: color 0.3s linear;  
+  	transition: color 0.3s linear; 
+
 }
 
 .font:hover {
@@ -234,9 +212,8 @@ hr{
 .about-txt{
 	font-size:22px;
   	text-align: justify;
- 
 	color:#F8ED46;
-	margin:50px;
+	margin:20px;
 	opacity: 80%;
 }
 
@@ -337,6 +314,10 @@ padding-right:20px;
 	color:#D38947;
 }
 
+.side{
+	padding-left:50px;
+}
+
 /*SERVICES*/
 
 #fixed {
@@ -361,24 +342,19 @@ padding-right:20px;
 	position:relative;
 	display:block;
 	margin-bottom:15px;
-	/*margin-left:30px;*/
-	width:90%;
+	
+	width:80%;
 	background:#eee;
 	height:15px;
 	border-radius:17px;
-	-moz-border-radius:17px;
-	-webkit-border-radius:17px;
-	-webkit-transition:0.4s linear;
-	-moz-transition:0.4s linear;
-	-ms-transition:0.4s linear;
-	-o-transition:0.4s linear;
+	
 	transition:0.4s linear;
 
 }
 
 .skillbar-title{
 	color:#F8ED46;
-	/*margin-left:30px;*/
+	
 }
 
 .skillbar-bar {
@@ -386,8 +362,7 @@ padding-right:20px;
 	width:0px;
 	background:#6adcfa;
 	border-radius:17px;
-	-moz-border-radius:17px;
-	-webkit-border-radius:17px;
+	
 }
 
 .skill-bar-percent {
@@ -404,23 +379,17 @@ padding-right:20px;
 
 @media screen and (max-width: 768px) {
 
-	/*.section-detail{
-		font-size: 18px;
-		text-align: justify;
-		margin:5px;
-	}
 
-	.detail{
-		font-size: 18px;
-	}*/
+
+	.about-txt{
+		font-size: 14px;
+		margin:25px;
+	}
 	
-	/*.skillbar {
-	margin-left:15px;
-	}
 
-	.skillbar-title{
-	margin-left:15px;
-	}*/
+	.skillbar{
+		width:100%;
+	}
 
 	.side{
 		background:none;
@@ -433,27 +402,17 @@ padding-right:20px;
 	.footer-note{
 	font-size: 12px;
 	}
-	
-	skill-control{
-		padding-left:40px;
-	}
 
 	.abt-heading{
 		text-align:center;
 		padding-top:4px;
 	}
-	.about-txt{
-	font-size:14px;
-	margin:30px;
+
 	
-	}
 	.para{
 		text-align: justify;
 		margin:20px;
 	}
 
-	#tech{
-		font-size: 30px;
-	}
 
 }
