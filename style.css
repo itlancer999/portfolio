@@ -102,6 +102,11 @@ html,body
 	background:#212529; 
 }
 
+.navbar-dark .navbar-nav .show>.nav-link {
+	color:#D38947;
+
+}
+
 .dropdown-item:hover{
 	color:#D38947;
 }
