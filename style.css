@@ -74,6 +74,10 @@ html,body
 
 
 /* NAVBAR */
+
+.bg-dark{
+	background-color:#303030!important;
+}
 .navbar-dark .navbar-brand{
 	color:#F8ED46;
 }
@@ -280,7 +284,7 @@ padding-right:20px;
 		}
 
 .page-footer{
-	background-color: #212529;
+	background-color: #303030;
 }
 .fa{
 	color:#F8ED46;
