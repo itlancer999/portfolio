@@ -10,7 +10,7 @@ didScroll = true;
           $(window).scroll(function() {
           // checks if window is scrolled more than 500px, adds/removes solid class
           
-          if($(this).scrollTop() > 190) { 
+          if($(this).scrollTop() > 70) { 
               $('.navbar-home').addClass('bg-dark');
               $('.navbar-home').removeClass('bg-transparent')
            
