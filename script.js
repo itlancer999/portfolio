@@ -21,7 +21,13 @@ didScroll = true;
             $('.navbar-home').addClass('bg-transparent');
           }
         });
+	
+//SUBMIT BUTTON
 
+     $("#gform").on('submit',function(e){
+        alert("Form submitted");
+        return false;
+    });
 
 //scroll animation
     $('#scrolldown').click (function() {
