@@ -26,7 +26,7 @@ didScroll = true;
 
      $("#gform").on('submit',function(e){
         alert("Form submitted");
-        return false;
+   
     });
 
 //scroll animation
